@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Web App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="pull-left">
+          <h1>The Dark Knight Rises</h1>
+          <div class="movie-sub-info">
+            <span>CBFC:U/A</span>
+            <span>2012 - Thriller/Action - 2h 45m</span>
+          </div>
+        </div>
+        <div class="pull-right share-opt" onclick="toggleMenu()">
+          <div class="menu-dot">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-options" id="menu-option" style="display: none">
+            <ul>
+                <li>
+                  <span><img src="" /></span>
+                  <span>Share</span>
+                </li>
+                <li>
+                  <span><img src="" /></span>
+                  <span>Send feedback</span>
+                </li>
+            </ul>
+          </div> 
+        </div>  
+      </header>
+      <div class="sticky-header" id="sticky-header">
+        <ul>
+          <li class="tab-link active" onclick="showTabData(event, 'overview')">OVERVIEW</li>
+          <li class="tab-link" onclick="showTabData(event, 'cast')">CAST</li>
+        </ul>
+      </div>
+      <div class="movie-wrapper">
+        <div id="overview" class="tab-data">
+          <div class="slider-div">
+            <div class="slider-bx">
+              <div><img src="images/slider1.jpg" /></div>
+              <div><img src="images/slider2.jpg" /></div>
+              <div><img src="images/slider3.jpg" /></div>
+              <div><img src="images/slider4.jpg" /></div>
+              <div><img src="images/slider5.jpg" /></div>
+              <div><img src="images/slider1.jpg" /></div>
+            </div>
+          </div>
+          <div class="movie-data">
+              <div class="ratings">
+                <div>
+                  <span>8.5/10</span>
+                  <span><a href="">IMDb</a></span>
+                </div>
+                <div>
+                  <span>87%</span>
+                  <span><a href="">Rotten Tomatoes</a></span>
+                </div>
+                <div>
+                  <span>78%</span>
+                  <span><a href="">Metacritic</a></span>
+                </div>
+              </div>
+              <div class="like-dislike">
+                <div class="">
+                  <div class="pull-left">
+                    <span>95% liked this film</span>
+                    <span>Google users</span>
+                  </div>
+                  <div class="pull-right">
+                    <img src="" alt="like" />
+                    <img src="" alt="dislike" />
+                  </div>
+                </div>
+              </div>
+              <div class="movie-overview-data">
+                <p>Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.</p>
+                <div class="fl-series">
+                  Film series: <a href="#">The Dark Knight Trilogy</a>
+                </div>
+              </div>
+              <div class="more-link">
+                <div class=""><a href="#">MORE ABOUT THIS FILM</a></div>
+              </div>
+          </div>
+          <div class="movie-data">
+              <div class="ratings">
+                <div>
+                  <span>8.5/10</span>
+                  <span><a href="">IMDb</a></span>
+                </div>
+                <div>
+                  <span>87%</span>
+                  <span><a href="">Rotten Tomatoes</a></span>
+                </div>
+                <div>
+                  <span>78%</span>
+                  <span><a href="">Metacritic</a></span>
+                </div>
+              </div>
+              <div class="like-dislike">
+                <div class="">
+                  <div class="pull-left">
+                    <span>95% liked this film</span>
+                    <span>Google users</span>
+                  </div>
+                  <div class="pull-right">
+                    <img src="" alt="like" />
+                    <img src="" alt="dislike" />
+                  </div>
+                </div>
+              </div>
+              <div class="movie-overview-data">
+                <p>Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.</p>
+                <div class="fl-series">
+                  Film series: <a href="#">The Dark Knight Trilogy</a>
+                </div>
+              </div>
+              <div class="more-link">
+                <div class=""><a href="#">MORE ABOUT THIS FILM</a></div>
+              </div>
+          </div>
+        </div>
+        <div id="cast" class="cast-wrapper tab-data">
+          <div class="cast-bx">
+            <a href="javascript:;" onclick="goToCastDetail();">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+          <div class="cast-bx">
+            <a href="#">
+              <img src="images/images.jpg" />
+              <div class="cast-name">
+                <span>Christian Bale</span>
+                <span>Batman, Bruce</span>
+              </div>
+            </a>  
+          </div>
+        </div>
+      </div>  
+    </div> 
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script> 
+     <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider-bx').slick({
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+    });
+  </script>
+  </body>
+</html>
